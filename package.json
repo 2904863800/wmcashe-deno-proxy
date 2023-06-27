@@ -1,0 +1,32 @@
+{
+    "name": "@wmcashe/deno-proxy",
+    "version": "1.0.0",
+    "description": "deno 请求代理",
+    "main": "index.js",
+    "bin": "index.js",
+    "pkg": {
+        "scripts": [
+            "build/src/**/*.js"
+        ]
+    },
+    "scripts": {
+        "lsts": "node scripts/listAllFile.js",
+        "clear": "node scripts/clear.js",
+        "dev": "tsc --build -w tsconfig.all.json",
+        "build": "tsc --build tsconfig.all.json",
+        "rebuild": "npm run clear && npm run build"
+    },
+    "author": "wmcashe",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node-fetch": "^2.6.4",
+        "@wmcashe/devkits": "^1.0.5"
+    },
+    "dependencies": {
+        "@types/node": "^18.16.16",
+        "http-proxy-agent": "^7.0.0",
+        "https-proxy-agent": "^7.0.0",
+        "node-fetch": "^2.6.11",
+        "tslib": "^2.5.2"
+    }
+}

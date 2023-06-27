@@ -1,0 +1,14 @@
+{
+    "extends": "../base.tsconfig.cjs",
+    "compilerOptions": {
+        "outDir": "../build/src",
+        "rootDir": "./"
+    },
+    "files": [
+        "@types.ts",
+        "bootstrapWorker.ts",
+        "configHelper.ts",
+        "index.ts",
+        "server.ts"
+    ]
+}

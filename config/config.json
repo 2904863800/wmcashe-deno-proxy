@@ -1,0 +1,30 @@
+{
+    "numberOfWorkers": 3,
+
+    "port": 443,
+    "timeout": 10000,
+
+    "certificate": {
+        "deno.com": {
+            "keyPath": "deno.com.key",
+            "certificatePath": "deno.com.crt"
+        },
+        "deno.land": {
+            "keyPath": "deno.land.key",
+            "certificatePath": "deno.land.crt"
+        },
+        "esm.sh": {
+            "keyPath": "esm.sh.key",
+            "certificatePath": "esm.sh.crt"
+        },
+        "esm.instatus.com": {
+            "keyPath": "esm.instatus.com.key",
+            "certificatePath": "esm.instatus.com.crt"
+        }
+    },
+
+    "proxyServer": {
+        "http": "http://127.0.0.1:7890",
+        "https": "http://127.0.0.1:7890"
+    }
+}
